@@ -3,14 +3,9 @@
 \usepackage{amsthm, amsmath, listings, url}
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
-\usepackage[colorlinks=true,
-            urlcolor=blue]{hyperref}
-\usepackage[a4paper,
-            left=20mm,
-            right=20mm,
-            top=20mm,
-            bottom=20mm]{geometry}
- 
+\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\usepackage[a4paper,left=20mm,right=20mm,top=20mm,bottom=20mm]{geometry}
+
 \renewcommand*\theenumi{\textbf{\alph{enumi}}}
 
 \begin{document}
@@ -31,8 +26,9 @@
     \includegraphics[width=\textwidth]{questao1_inputs.png}
 \end{itemize}
 \newpage
+
 \subsection*{Questão 2}
-\textit{L(M)} = \{$a^{i}b^{j}c^{k}$ \vert $ i \times j = k $ e $i, j, k \geq 1$\}
+\textit{L(M)} = \{$a^{i}b^{j}c^{k}\ \vert\  i \times j = k $ e $i, j, k \geq 1$\}
 \begin{itemize}
     \item \textbf{Descrição do funcionamento}: A máquina marca um A e a quantidade inteira de letras B, e a mesma quantidade de letras C, fazendo uma operação similar à soma de multiplicações triviais. Ao final da marcação de letras C, as letras B são desmarcadas e a próxima letra A é marcada, e assim por diante. Se a multiplicação não apresentar seu resultado correto, lembrando que todas as letras precisam aparecer pelo menos uma vez, a máquina rejeitará a entrada.
     \item \textbf{Codificação da máquina}: \\
@@ -41,8 +37,9 @@
     \includegraphics[width=\textwidth]{questao2_inputs.png}
 \end{itemize}
 \newpage
+
 \subsection*{Questão 3}
-\textit{L(M)} = \{$\#x_{1}\#x_{2}\#...\#x_{n}$ \vert $ x_{i} \in \Sigma = \{0,1\}^{*}$ e $x_{i} \neq x_{j}$ para cada $i \neq j$\}
+\textit{L(M)} = \{$\#x_{1}\#x_{2}\#...\#x_{n}\  \vert\  x_{i} \in \Sigma = \{0,1\}^{*}$ e $x_{i} \neq x_{j}$ para cada $i \neq j$\}
 \begin{itemize}
     \item \textbf{Descrição do funcionamento}: A máquina compara $x_i$ e $x_j$, $\forall i\neq j$, exceto pela palavra vazia, garantida no início do procedimento. Após esta garantia, um $x_i$ é fixado e comparado com $x_{i+1}$, $x_{i+2}$, ..., $x_n$. Depois do final dessa comparação, a próxima subpalavra, $x_{i+1}$, é fixada e comparada com os elementos posteriores, separados pelo \#, até que este não seja mais encontrado na entrada, significando o fim da mesma.
     \item \textbf{Codificação da máquina}: \\
@@ -50,4 +47,5 @@
     \item \textbf{Testes realizados}: \\ \\
     \includegraphics[width=\textwidth]{questao3_inputs.png}
 \end{itemize}
+
 \end{document}
