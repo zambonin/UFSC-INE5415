@@ -1,0 +1,7 @@
+A small introduction to the clique problem [1] as one of the Karp's 21
+NP-complete problems and its NP-completeness demonstration through 3-SAT
+reduction.
+
+[1] https://en.wikipedia.org/wiki/Clique_problem
+
+Original assignment: 8b51f4047999fcc74e9d35268b0a5d8b5a87d119

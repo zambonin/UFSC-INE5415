@@ -1,0 +1,7 @@
+Using JFlap [1], three automata were constructed to match the specifications
+of the languages given. The discussion about the strategies can be read in
+`ine5415_t1.pdf`.
+
+[1] https://www.jflap.org/
+
+Original assignment: 8b51f4047999fcc74e9d35268b0a5d8b5a87d119
