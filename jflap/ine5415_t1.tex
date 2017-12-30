@@ -1,22 +1,19 @@
-\documentclass{article}
+\documentclass{../sftex/sftex}
 
-\usepackage[brazil]{babel}
-\usepackage[T1]{fontenc}
-\usepackage[a4paper, margin=1.5cm]{geometry}
-\usepackage[utf8]{inputenc}
 \usepackage{graphicx}
+
+\title{Representação de máquinas de Turing usando \emph{JFlap}}
+\author{Antonio Luiz Rosa Teixeira, Gustavo Zambonin}
+\email{\{antonio.teixeira,gustavo.zambonin\}@grad.ufsc.br}
+\src{https://github.com/zambonin/ufsc-ine5415}
+\uniclass{Teoria da Computação}
+\classcode{UFSC-INE5415}
 
 \begin{document}
 
-\begin{center}
-    \section*{INE5415 - Teoria da Computação (2015/1)}
-    \textbf{
-        Trabalho 1 - Máquinas de Turing \\
-        Antonio Luiz Rosa Teixeira, Gustavo Zambonin
-    }
-\end{center}
+\maketitle
 
-\subsection*{Questão 1}
+\section*{Questão 1}
 
 \begin{itemize}
 
@@ -47,9 +44,8 @@
 
 \end{itemize}
 
-\newpage
+\section*{Questão 2}
 
-\subsection*{Questão 2}
 \begin{itemize}
 
     \item \textbf{Descrição da linguagem}:
@@ -79,20 +75,18 @@
 
 \end{itemize}
 
-\newpage
-
-\subsection*{Questão 3}
+\section*{Questão 3}
 
 \begin{itemize}
 
     \item \textbf{Descrição da linguagem}:
-        $L(M) = \{ \#x_1\#x_2 \cdots \#x_n \mid x_i \in \Sigma = \{0,1\}^*
+        $L(M) = \{ \#x_1\#x_2 \cdots \#x_n \mid x_i \in \Sigma = {\{0,1\}}^*
             \land x_i \neq x_j \; \forall \; i \neq j\}$
 
     \item \textbf{Descrição do funcionamento}: A máquina compara
         $x_i$ e $x_j$, $\forall i\neq j$, exceto pela palavra vazia, garantida
         no início do procedimento. Após esta garantia, um $x_i$ é fixado e
-        comparado com $x_{i+1}, x_{i+2}, \cdots, x_n$. Depois do final dessa
+        comparado com $x_{i+1}, x_{i+2}, \ldots, x_n$. Depois do final dessa
         comparação, a próxima subpalavra, $x_{i+1}$, é fixada e comparada com
         os elementos posteriores, separados pelo \#, até que este não seja
         mais encontrado na entrada, significando o fim da mesma.
